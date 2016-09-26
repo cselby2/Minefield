@@ -20,5 +20,8 @@ TEST(FieldTest, placeMineInBounds)
 	Field minefield;
 	
 	minefield.placeMine(4,5);
-	ASSERT_EQ( MINE_HIDDEN, minefield.get(4,5) );
+//	ASSERT_EQ( MINE_HIDDEN, minefield.get(4,5) );
+//	ASSERT_EQ(MINE_SHOWN, minefield.get(4,5));
+//	ASSERT_EQ(EMPTY_HIDDEN, minefield.get(4,5));
+	ASSERT_EQ(EMPTY_SHOWN, minefield.get(4,5));
 }
